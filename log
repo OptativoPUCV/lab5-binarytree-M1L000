@@ -186,3 +186,14 @@ Wed 08 May 2024 06:45:36 PM UTC:
  tests:  15|4
 total_score: 25/70
 85f6644
+Wed 08 May 2024 06:48:41 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:153:12: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  153 |     return minimum(tree->root);
+      |            ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+260e365
