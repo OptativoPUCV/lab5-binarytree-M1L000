@@ -106,7 +106,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     TreeNode *aux = tree->root;
     while(aux != node)
         {
-            if(tree->lower_than(aux->pair->key,node->pair->key) == 1)
+            if(tree->lower_than(node->pair->key,aux->pair->key) == 1)
             {
                 aux = aux->left;
             }
