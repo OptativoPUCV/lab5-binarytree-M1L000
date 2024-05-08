@@ -114,3 +114,14 @@ Wed 08 May 2024 06:26:01 PM UTC:
  tests:  16|4
 total_score: 30/70
 aae2b6a
+Wed 08 May 2024 06:34:18 PM UTC: 
+ treemap.c | 29 +++++++++++++++++++++++------
+ 1 file changed, 23 insertions(+), 6 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:105:15: error: variable ‘parent’ set but not used [-Werror=unused-but-set-variable]
+  105 |     TreeNode *parent = NULL;
+      |               ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a62dfca
