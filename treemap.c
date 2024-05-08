@@ -103,51 +103,70 @@ TreeNode * minimum(TreeNode * x){
 void removeNode(TreeMap * tree, TreeNode* node) {
     if (tree == NULL || tree->root == NULL) return;
     if (node == NULL) return;
-    TreeNode *parent = node->parent;
-    if (node->left == NULL && node->right == NULL)
+    TreeNode *aux = tree->root;
+    while(is_equal(tree, aux->pair,node->pair) != 1)
+        {
+            if(tree->lower_than(aux->pair->key,node->pair->key) == 1)
+            {
+                aux = aux->left;
+            }
+            else
+            {
+                aux = aux->right;
+            }
+            
+        }
+    TreeNode *parent = aux->parent;
+    if (aux->left == NULL && aux->right == NULL)
     {
-        if(is_equal(tree, parent->left->pair,node->pair) == 1)
+        if(is_equal(tree, parent->left->pair,aux->pair) == 1)
         {
             parent->left = NULL;
+            free(aux);
             free(node);
             return;
         }
-        if(is_equal(tree, parent->right->pair,node->pair) == 1)
+        if(is_equal(tree, parent->right->pair,aux->pair) == 1)
         {
             parent->right = NULL;
+            free(aux);
             free(node);
             return;
         }
     }
-    else if((node->left == NULL && node->right != NULL || (node->left != NULL && node->right == NULL)
+    else if((aux->left == NULL && aux->right != NULL || (aux->left != NULL && aux->right == NULL)
     {
-        if(is_equal(tree, parent->left->pair,node->pair) == 1)
+        if(is_equal(tree, parent->left->pair,aux->pair) == 1)
         {
-            if(node->left == NULL)
+            if(aux->left == NULL)
             {
-                parent->left = node->right;
+                parent->left = aux->right;
                 free(node);
+                free(aux);
                 return;
             }
             else
             {
-                parent->left = node->left;
+                parent->left = aux->left;
                 free(node);
+                free(aux);
                 return;
             }
         }
         else
         {
-            if(node->left == NULL)
+            if(aux->left == NULL)
             {
-                parent->right = node->right;
+                parent->right = aux->right;
                 free(node);
+                free(aux);
                 return;
             }
             else
             {
-                parent->right = node->left;
+                parent->right = aux->left;
                 free(node);
+                free(aux);
                 return;
             }
         }
