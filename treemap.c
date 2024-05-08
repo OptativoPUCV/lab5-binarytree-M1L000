@@ -102,6 +102,7 @@ TreeNode * minimum(TreeNode * x){
 
 void removeNode(TreeMap * tree, TreeNode* node) {
     TreeNode *aux = tree->root;
+    TreeNode *parent = NULL;
     while(aux != NULL)
         {
             parent = aux;
