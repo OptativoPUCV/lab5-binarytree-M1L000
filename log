@@ -74,3 +74,13 @@ treemap.c:93:21: error: ‘tree’ undeclared (first use in this function); did 
 treemap.c:93:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0a5eef6
+Wed 08 May 2024 06:20:33 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘minimum’:
+treemap.c:93:22: error: ‘TreeNode’ has no member named ‘root’
+   93 |     if(x == NULL || x->root == NULL) return NULL;
+      |                      ^~
+Compilation failed
+54354ff
