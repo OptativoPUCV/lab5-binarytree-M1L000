@@ -252,5 +252,6 @@ Pair * nextTreeMap(TreeMap * tree) {
     {
         return parent->pair;
     }
+    return NULL;
     
 }
