@@ -104,7 +104,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     if (tree == NULL || tree->root == NULL) return;
     if (node == NULL) return;
     TreeNode *aux = tree->root;
-    while(is_equal(tree, aux->pair,node->pair) != 1)
+    while(aux != node)
         {
             if(tree->lower_than(aux->pair->key,node->pair->key) == 1)
             {
