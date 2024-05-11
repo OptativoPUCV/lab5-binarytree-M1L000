@@ -413,3 +413,10 @@ cc1: fatal error: test.h: No such file or directory
 compilation terminated.
 Compilation failed
 3092676
+Sat 11 May 2024 02:45:10 PM UTC: 
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: cannot find bash: No such file or directory
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld:test.sh: file format not recognized; treating as linker script
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld:test.sh:2: syntax error
+collect2: error: ld returned 1 exit status
+Compilation failed
+8ff7711
