@@ -482,3 +482,14 @@ treemap.c:226:16: error: variable ‘ub’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 6ebe727
+Sat 11 May 2024 03:00:05 PM UTC: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:230:21: error: ‘ub’ undeclared (first use in this function)
+  230 |                     ub = aux;
+      |                     ^~
+treemap.c:230:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fa1022d
