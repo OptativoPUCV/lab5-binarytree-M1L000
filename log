@@ -448,3 +448,14 @@ Sat 11 May 2024 02:46:42 PM UTC:
 collect2: error: ld returned 1 exit status
 Compilation failed
 d93d9ed
+Sat 11 May 2024 02:51:50 PM UTC: 
+ treemap.c | 22 +---------------------
+ 1 file changed, 1 insertion(+), 21 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:226:1: error: control reaches end of non-void function [-Werror=return-type]
+  226 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2bc121f
