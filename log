@@ -434,3 +434,10 @@ Sat 11 May 2024 02:45:48 PM UTC:
 collect2: error: ld returned 1 exit status
 Compilation failed
 6856d23
+Sat 11 May 2024 02:45:58 PM UTC: 
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: cannot find bash: No such file or directory
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld:test.sh: file format not recognized; treating as linker script
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld:test.sh:2: syntax error
+collect2: error: ld returned 1 exit status
+Compilation failed
+7694892
