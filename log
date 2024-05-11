@@ -403,3 +403,8 @@ Sat 11 May 2024 02:44:41 PM UTC:
 collect2: error: ld returned 1 exit status
 Compilation failed
 ad47646
+Sat 11 May 2024 02:45:00 PM UTC: 
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: cannot find bash_test.sh: No such file or directory
+collect2: error: ld returned 1 exit status
+Compilation failed
+eacb85d
