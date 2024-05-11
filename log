@@ -539,3 +539,9 @@ treemap.c:236:21: error: ‘ub’ undeclared (first use in this function)
 treemap.c:236:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6827eda
+Sat 11 May 2024 03:07:07 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  29|0
+total_score: 70/70
+c10c65e
