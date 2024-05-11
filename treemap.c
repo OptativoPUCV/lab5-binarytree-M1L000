@@ -222,17 +222,18 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode * aux = tree->root;
-    TreeNode * ub = NULL;
+    TreeNode * ubicasion = NULL;
     while (aux != NULL)
         {
             if (is_equal(tree, key, aux->pair->key)) 
                 {
-                    ub = aux;
+                    ubicasion = aux;
                     aux = aux->right;
                 }
             else{
                 if (tree->lower_than(key, aux->pair->key) == 1)
                 {
+                    ub = aux;
                     aux = aux->left;
                 }
                 else
@@ -241,8 +242,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
                 }
             }
         }
-    tree->current = ub;
-    if(ub != NULL) return ub->pair;
+    tree->current = ubicasion;
+    if(ubicasion != NULL) return ubicasion->pair;
     return NULL;
     
 }
